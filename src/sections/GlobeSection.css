@@ -1,0 +1,84 @@
+.globe {
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-cream) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: clamp(24px, 4vw, 64px);
+    align-items: center;
+}
+
+.globe__text {
+    padding-left: clamp(20px, 5vw, 80px);
+}
+
+.globe__title {
+    margin-bottom: 16px;
+}
+
+.globe__title em {
+    color: var(--accent-coral);
+    font-style: italic;
+}
+
+.globe__canvas-wrap {
+    height: 80vh;
+    min-height: 500px;
+}
+
+.globe__city-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-size: 11px;
+    font-family: var(--font-body);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.globe__city-label strong {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text);
+}
+
+.globe__city-label small {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.globe__city-emoji {
+    font-size: 18px;
+}
+
+.globe__reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s var(--ease-out);
+}
+
+.globe__reveal--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .globe {
+        grid-template-columns: 1fr;
+    }
+
+    .globe__text {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .globe__canvas-wrap {
+        height: 60vh;
+        min-height: 400px;
+    }
+}

@@ -1,0 +1,19 @@
+.floating-torus {
+    position: fixed;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    width: clamp(250px, 25vw, 400px);
+    height: clamp(250px, 25vw, 400px);
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.85;
+    mix-blend-mode: normal;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 900px) {
+    .floating-torus {
+        display: none;
+    }
+}
