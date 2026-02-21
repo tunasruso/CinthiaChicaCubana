@@ -27,32 +27,34 @@ export default function AboutSection() {
                 <div className="about__grid">
                     <div className="about__photo-col about__reveal">
                         <div className="about__photo-wrapper">
-                            <img src="/photos/cinthia-cuba.jpg" alt="Cinthia en Cuba" className="about__photo" />
+                            <img src="/photos/cinthia-cuba.jpg" alt="Cynthiia Nova - cubana en Rusia" className="about__photo" />
                             <div className="about__photo-badge glass">
                                 <span>🌺</span> Las Tunas, Cuba
                             </div>
                         </div>
                         <div className="about__photo-secondary">
-                            <img src="/photos/cinthia-casual.jpg" alt="Cinthia casual" className="about__photo" />
+                            <img src="/photos/cinthia-casual.jpg" alt="Cynthiia Nova casual" className="about__photo" />
                         </div>
                     </div>
 
                     <div className="about__text-col">
                         <span className="section-label about__reveal">Quién soy</span>
                         <h2 className="about__title about__reveal">
-                            Soy Cinthia,<br />
+                            Soy Cynthiia Nova,<br />
                             <em>chica cubana</em><br />
                             в России
                         </h2>
 
                         <GlassCard className="about__bio-card about__reveal">
                             <div className="about__bio-content">
-                                <p>
-                                    Мне 23. Я из Лас-Тунас — города на востоке Кубы, где музыка звучит на каждой улице, а солнце не заходит до поздней ночи.
-                                    Теперь я живу в России, где зима длится полгода, а люди сначала кажутся холодными, но потом становятся самыми близкими.
+                                <p className="about__bio-quote">
+                                    «Cubana 🇨🇺 viviendo en Rusia 🇷🇺. Experiencias, mi día a día, familia, vlogs, hijos. De todo un poco ✨»
                                 </p>
                                 <p>
-                                    Я — мама Влади, который имеет российское гражданство. Моя жизнь — это история о любви, адаптации и о том, как не потерять себя между двумя мирами.
+                                    Мне 23. Я из Лас-Тунас — города на востоке Кубы, где музыка звучит на каждой улице. Сейчас живу в России, создаю контент, растю сына и делюсь историями между двумя мирами.
+                                </p>
+                                <p>
+                                    Я — мама Влади, digital content creator и автор влогов о жизни кубинки в России. На моём канале — «Capítulo» за «Capítulo» про еду, людей, зиму и всё, что между Кубой и Россией.
                                 </p>
                             </div>
                         </GlassCard>
@@ -61,9 +63,9 @@ export default function AboutSection() {
                             <span className="pill">🎂 23 года</span>
                             <span className="pill">🇨🇺 Las Tunas</span>
                             <span className="pill">👶 Mamá de Vladi</span>
-                            <span className="pill">📍 Иваново / Москва</span>
-                            <span className="pill">📱 Facebook Blogger</span>
-                            <span className="pill">🌡️ -20°C? Sobrevivo.</span>
+                            <span className="pill">📍 Москва / Россия</span>
+                            <span className="pill">🎬 Content Creator</span>
+                            <span className="pill">💃 Cubana de corazón</span>
                         </div>
                     </div>
                 </div>

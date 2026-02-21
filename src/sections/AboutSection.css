@@ -97,6 +97,15 @@
     margin-bottom: 0;
 }
 
+.about__bio-quote {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--accent-coral);
+    border-left: 3px solid var(--accent-coral);
+    padding-left: 16px;
+    line-height: 1.6;
+}
+
 .about__pills {
     display: flex;
     flex-wrap: wrap;
