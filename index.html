@@ -1,15 +1,111 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🌴</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Cinthia — дневник кубинки в России. История между солнечной Гаваной и снежной Россией." />
-    <meta name="theme-color" content="#FAFAF7" />
-    <title>Cinthia — Entre Dos Mundos</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Cinthia — Кубинка в России | Синтия Entre Dos Mundos</title>
+  <meta name="description"
+    content="Синтия — кубинка из Лас-Тунас, живущая в России. Дневник о жизни между двумя мирами: Куба и Россия. Блог, фото, танцы. Cinthia Chica Cubana en Rusia." />
+  <meta name="keywords"
+    content="синтия кубинка, кубинка в россии, cinthia cubana, кубинка в иваново, cinthia chica cubana, кубинка блог, куба россия, латиноамериканка в россии, синтия блогер, cubana en rusia" />
+  <meta name="author" content="Cinthia" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cinthia-chica-cubana.netlify.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cinthia-chica-cubana.netlify.app/" />
+  <meta property="og:title" content="Cinthia — Кубинка в России | Entre Dos Mundos" />
+  <meta property="og:description"
+    content="Синтия — кубинка из Лас-Тунас, живущая в России. Дневник между солнечной Кубой и снежной Россией. Блог, фото, танцы 💃" />
+  <meta property="og:image" content="https://cinthia-chica-cubana.netlify.app/photos/cinthia-beach.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:site_name" content="Cinthia Chica Cubana" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cinthia — Кубинка в России" />
+  <meta name="twitter:description" content="Дневник кубинки между солнцем Лас-Тунас и снегами России 🌴❄️" />
+  <meta name="twitter:image" content="https://cinthia-chica-cubana.netlify.app/photos/cinthia-beach.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🌴</text></svg>" />
+  <meta name="theme-color" content="#FAFAF7" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cinthia",
+      "alternateName": ["Синтия", "Cinthia Chica Cubana", "Синтия кубинка"],
+      "description": "Кубинка из Лас-Тунас, живущая в России. Блогер, мама, танцовщица. Делится историями о жизни между Кубой и Россией.",
+      "url": "https://cinthia-chica-cubana.netlify.app",
+      "image": "https://cinthia-chica-cubana.netlify.app/photos/cinthia-beach.jpg",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Лас-Тунас, Куба",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CU",
+          "addressLocality": "Las Tunas"
+        }
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Cuba"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Иваново, Россия",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "RU",
+          "addressLocality": "Иваново"
+        }
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61585968043753"
+      ],
+      "knowsLanguage": ["es", "ru"]
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cinthia — Entre Dos Mundos",
+      "alternateName": "Синтия кубинка в России",
+      "url": "https://cinthia-chica-cubana.netlify.app",
+      "description": "Дневник кубинки из Лас-Тунас, живущей в России. История между Кубой и Россией.",
+      "inLanguage": ["ru", "es"],
+      "author": {
+        "@type": "Person",
+        "name": "Cinthia"
+      }
+    }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <noscript>
+    <h1>Cinthia — Кубинка в России</h1>
+    <p>Синтия — кубинка из Лас-Тунас, живущая в России. Мне 23 года, я мама Влади, и это мой дневник о жизни между двумя
+      мирами.</p>
+    <p>Я из города Лас-Тунас на Кубе. Сейчас живу в Иваново. Мой блог — это история о любви, адаптации и о том, как не
+      потерять себя между солнечной Кубой и снежной Россией.</p>
+    <p>Читайте мой блог в Facebook: <a href="https://www.facebook.com/profile.php?id=61585968043753">Cinthia Chica
+        Cubana</a></p>
+  </noscript>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

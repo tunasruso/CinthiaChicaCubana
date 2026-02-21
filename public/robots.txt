@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cinthia-chica-cubana.netlify.app/sitemap.xml
