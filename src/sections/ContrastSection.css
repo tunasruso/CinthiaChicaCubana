@@ -1,5 +1,8 @@
 .contrast {
-    background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-warm) 50%, var(--bg) 100%);
+    background:
+        linear-gradient(135deg, rgba(232, 101, 74, 0.03) 0%, transparent 50%),
+        linear-gradient(225deg, rgba(200, 221, 232, 0.05) 0%, transparent 50%),
+        linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-warm) 50%, var(--bg) 100%);
     padding-bottom: 40px;
 }
 
@@ -16,6 +19,20 @@
 .contrast__arrow {
     color: var(--accent-coral);
     font-size: 0.7em;
+    display: inline-block;
+    animation: arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(1.3);
+    }
 }
 
 .contrast__desc {
@@ -41,6 +58,7 @@
     min-width: min-content;
 }
 
+/* Cards with perspective tilt */
 .contrast__card {
     min-width: 380px;
     max-width: 420px;
@@ -49,6 +67,7 @@
     transform: translateY(30px) scale(0.95);
     transition: all 0.7s var(--ease-out);
     flex-shrink: 0;
+    perspective: 800px;
 }
 
 .contrast__card--visible {
@@ -57,7 +76,8 @@
 }
 
 .contrast__card:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-6px) scale(1.02) rotateX(2deg);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
 }
 
 .contrast__card-header {
@@ -99,7 +119,7 @@
 }
 
 .contrast__side--warm {
-    background: linear-gradient(135deg, rgba(232, 101, 74, 0.04), transparent);
+    background: linear-gradient(135deg, rgba(232, 101, 74, 0.06), transparent);
     border-radius: var(--radius-sm);
 }
 
@@ -108,8 +128,14 @@
     border-radius: var(--radius-sm);
 }
 
+/* Emoji bounce on card hover */
 .contrast__emoji {
     font-size: 1.8rem;
+    transition: transform 0.4s var(--ease-spring);
+}
+
+.contrast__card:hover .contrast__emoji {
+    transform: scale(1.3) rotate(-5deg);
 }
 
 .contrast__divider {

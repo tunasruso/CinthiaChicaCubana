@@ -24,6 +24,7 @@
 .about__photo-col {
     display: flex;
     gap: 16px;
+    position: relative;
 }
 
 .about__photo-wrapper {
@@ -32,6 +33,13 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    transform: rotate(-2deg);
+    transition: transform 0.5s var(--ease-spring);
+    z-index: 2;
+}
+
+.about__photo-wrapper:hover {
+    transform: rotate(0deg) scale(1.02);
 }
 
 .about__photo-wrapper .about__photo {
@@ -53,6 +61,7 @@
     gap: 8px;
 }
 
+/* Offset overlap - break the grid */
 .about__photo-secondary {
     flex: 0.7;
     border-radius: var(--radius-lg);
@@ -60,6 +69,13 @@
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
     align-self: flex-end;
     margin-bottom: 40px;
+    transform: rotate(3deg) translateY(20px);
+    transition: transform 0.5s var(--ease-spring);
+    z-index: 1;
+}
+
+.about__photo-secondary:hover {
+    transform: rotate(0deg) translateY(0) scale(1.02);
 }
 
 .about__photo-secondary .about__photo {
@@ -85,8 +101,15 @@
     font-style: italic;
 }
 
+/* Bio card with subtle tilt on hover */
 .about__bio-card {
     padding: clamp(20px, 3vw, 32px);
+    transition: transform 0.4s var(--ease-spring), box-shadow 0.4s var(--ease-out);
+}
+
+.about__bio-card:hover {
+    transform: translateY(-4px) rotate(-0.5deg);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
 }
 
 .about__bio-content p {
@@ -106,6 +129,7 @@
     line-height: 1.6;
 }
 
+/* Pill stagger pop-in */
 .about__pills {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +147,47 @@
     transform: translateY(0);
 }
 
+/* Staggered pill entrance */
+.about__reveal--visible.about__pills .pill {
+    animation: pillPop 0.5s var(--ease-spring) both;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(5) {
+    animation-delay: 0.32s;
+}
+
+.about__reveal--visible.about__pills .pill:nth-child(6) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pillPop {
+    0% {
+        opacity: 0;
+        transform: translateY(12px) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 @media (max-width: 900px) {
     .about__grid {
         grid-template-columns: 1fr;
@@ -131,6 +196,14 @@
 
     .about__photo-col {
         max-height: 350px;
+    }
+
+    .about__photo-wrapper {
+        transform: rotate(0deg);
+    }
+
+    .about__photo-secondary {
+        transform: rotate(0deg) translateY(0);
     }
 
     .about__photo-wrapper .about__photo,

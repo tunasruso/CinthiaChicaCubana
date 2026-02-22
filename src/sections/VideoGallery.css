@@ -42,6 +42,10 @@
     transform: translateY(0) scale(1);
 }
 
+.vgallery__card:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
 .vgallery__video-wrap {
     position: relative;
     width: 100%;
@@ -113,8 +117,9 @@
 }
 
 .vgallery__video-wrap:hover .vgallery__play-btn {
-    transform: scale(1.1);
-    background: rgba(232, 101, 74, 0.6);
+    transform: scale(1.15);
+    background: rgba(232, 101, 74, 0.7);
+    box-shadow: 0 0 30px rgba(232, 101, 74, 0.4);
 }
 
 .vgallery__caption-bar {
@@ -123,10 +128,18 @@
     left: 0;
     right: 0;
     padding: 40px 16px 16px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     display: flex;
     flex-direction: column;
     gap: 4px;
+    transform: translateY(4px);
+    opacity: 0.8;
+    transition: all 0.4s var(--ease-out);
+}
+
+.vgallery__video-wrap:hover .vgallery__caption-bar {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .vgallery__tag {
