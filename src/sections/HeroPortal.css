@@ -315,9 +315,11 @@
     position: relative;
     right: auto;
     bottom: auto;
-    width: 160px;
-    height: 200px;
-    margin-top: 24px;
+    width: 140px;
+    height: 180px;
+    margin-top: 16px;
+    transform: rotate(2deg);
+    z-index: 3;
   }
 
   .hero__title {
