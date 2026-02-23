@@ -26,14 +26,34 @@ export default function AboutSection() {
             <div className="container">
                 <div className="about__grid">
                     <div className="about__photo-col about__reveal">
-                        <div className="about__photo-wrapper">
-                            <img src="/photos/cinthia-cuba.jpg" alt="Cynthiia Nova - cubana en Rusia" className="about__photo" />
-                            <div className="about__photo-badge glass">
-                                <span>🌺</span> Las Tunas, Cuba
+                        <div className="about__media-row">
+                            <div className="about__photo-wrapper">
+                                <img src="/photos/cinthia-cuba.jpg" alt="Cynthiia Nova - cubana en Rusia" className="about__photo" />
+                                <div className="about__photo-badge glass">
+                                    <span>🌺</span> Las Tunas, Cuba
+                                </div>
+                            </div>
+                            <div className="about__video-stack">
+                                <div className="about__video-card">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia4.mp4" />
+                                </div>
+                                <div className="about__video-card">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia5.mov" />
+                                </div>
                             </div>
                         </div>
-                        <div className="about__photo-secondary">
-                            <img src="/photos/cinthia-casual.jpg" alt="Cynthiia Nova casual" className="about__photo" />
+                        <div className="about__media-row about__media-row--lower">
+                            <div className="about__video-stack">
+                                <div className="about__video-card">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia6.mp4" />
+                                </div>
+                            </div>
+                            <div className="about__video-large">
+                                <video autoPlay loop muted playsInline src="/videos/cynthia7.mp4" />
+                            </div>
+                            <div className="about__photo-secondary">
+                                <img src="/photos/cinthia-casual.jpg" alt="Cynthiia Nova casual" className="about__photo" />
+                            </div>
                         </div>
                     </div>
 

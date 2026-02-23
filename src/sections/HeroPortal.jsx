@@ -112,6 +112,29 @@ export default function HeroPortal() {
 
     return (
         <section ref={sectionRef} id="hero" className="hero">
+            <div className="hero__video-stack">
+                <div className="hero__video-loop">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        src="/videos/cynthia1.mp4"
+                        className="hero__video-loop-media"
+                    />
+                </div>
+                <div className="hero__video-loop">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        src="/videos/cynthia2.mov"
+                        className="hero__video-loop-media"
+                    />
+                </div>
+            </div>
+
             <div className="hero__canvas">
                 <Canvas
                     camera={{ position: [0, 0, 7], fov: 50 }}
@@ -150,6 +173,17 @@ export default function HeroPortal() {
             <div className="hero__scroll-indicator">
                 <div className="hero__scroll-line"></div>
                 <span>scroll</span>
+            </div>
+
+            <div className="hero__video-right">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src="/videos/cynthia3.mp4"
+                    className="hero__video-loop-media"
+                />
             </div>
 
             <div className="hero__photo-frame">

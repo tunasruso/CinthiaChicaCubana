@@ -113,6 +113,22 @@ export default function TimelineSection() {
                                     <p className="timeline__card-desc">{item.desc}</p>
                                 </div>
                             </GlassCard>
+
+                            {i === 0 && (
+                                <div className="timeline__video-companion">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia8.mp4" />
+                                </div>
+                            )}
+                            {i === 1 && (
+                                <div className="timeline__video-companion timeline__video-companion--left">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia11.mov" />
+                                </div>
+                            )}
+                            {i === 2 && (
+                                <div className="timeline__video-companion">
+                                    <video autoPlay loop muted playsInline src="/videos/cynthia9.mov" />
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
