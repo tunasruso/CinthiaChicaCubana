@@ -61,12 +61,6 @@ export default function Navigation() {
                     ))}
                 </div>
 
-                <a href="https://www.facebook.com/profile.php?id=61585968043753" target="_blank" rel="noopener noreferrer" className="nav__cta">
-                    Facebook
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M7 17L17 7M17 7H7M17 7v10" />
-                    </svg>
-                </a>
 
                 <button className={`nav__burger ${menuOpen ? 'nav__burger--open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
                     <span></span><span></span><span></span>

@@ -37,7 +37,6 @@ export default function FooterSection() {
                     </div>
                     <div className="footer__link-group">
                         <h4>Соцсети</h4>
-                        <a href="https://www.facebook.com/profile.php?id=61585968043753" target="_blank" rel="noopener noreferrer">Facebook</a>
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
                         <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
                     </div>
